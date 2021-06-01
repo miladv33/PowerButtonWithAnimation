@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleIncreasing">
+        <attr name="lineColor" format="color" />
+        <attr name="shadowColor" format="color" />
+        <attr name="hasShadow" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="QueuePowerButton">
+        <attr name="circlePadding" format="dimension"/>
+    </declare-styleable>
+</resources>

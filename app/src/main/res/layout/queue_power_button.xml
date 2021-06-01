@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/mainCircle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_power_back_v1" />
+
+    <com.example.playpropowerbutton.CircleIncreasing
+        android:id="@+id/redLine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:lineColor="@color/red"
+        app:hasShadow="false"
+        app:layout_constraintBottom_toBottomOf="@+id/mainCircle"
+        app:layout_constraintEnd_toEndOf="@+id/mainCircle"
+        app:layout_constraintStart_toStartOf="@+id/mainCircle"
+        app:layout_constraintTop_toTopOf="@+id/mainCircle"
+        />
+
+    <com.example.playpropowerbutton.CircleIncreasing
+        android:id="@+id/greenLine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:lineColor="@color/green"
+        app:shadowColor="@color/shadowGreen"
+        app:hasShadow="true"
+        app:layout_constraintBottom_toBottomOf="@+id/mainCircle"
+        app:layout_constraintEnd_toEndOf="@+id/mainCircle"
+        app:layout_constraintStart_toStartOf="@+id/mainCircle"
+        app:layout_constraintTop_toTopOf="@+id/mainCircle" />
+
+    <ImageView
+        android:id="@+id/center_icon_imageView"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mainCircle"
+        app:layout_constraintStart_toStartOf="@+id/mainCircle"
+        app:layout_constraintTop_toTopOf="@+id/mainCircle"
+        app:srcCompat="@drawable/ic_power_icon_v1" />
+
+    <ImageView
+        android:id="@+id/redIcon_imageView"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mainCircle"
+        app:layout_constraintStart_toStartOf="@+id/mainCircle"
+        app:layout_constraintTop_toTopOf="@+id/mainCircle"
+        app:srcCompat="@drawable/ic_power_icon_v1"
+        app:tint="@color/red" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
