@@ -48,7 +48,7 @@ class QueuePowerButton(context: Context, var attributeSet: AttributeSet) :
         val redCenterIcon = view.findViewById<ImageView>(R.id.redIcon_imageView)
         redCenterIcon.fadeIn(
             duration = 1000,
-            startOffset = 59000,
+            startOffset = 850,
             animationListener = object : Animation.AnimationListener {
                 override fun onAnimationRepeat(animation: Animation?) {
 
@@ -62,7 +62,7 @@ class QueuePowerButton(context: Context, var attributeSet: AttributeSet) :
                 }
 
             })
-        PowerAnimationManager.startIncreasingCircle(greenLine, 60000, object : IAnimationDone {
+        PowerAnimationManager.startIncreasingCircle(greenLine, 1000, object : IAnimationDone {
             override fun done() {
 
             }
